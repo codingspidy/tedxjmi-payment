@@ -9,12 +9,89 @@
 }
 
 
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.innerDiv {
+  margin-inline: auto;
+}
+@media only screen and (min-width: 280px) {
+  .innerDiv {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header .innerDiv {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .innerDiv {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  header .innerDiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .innerDiv {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  header .innerDiv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .overflow-y-scroll {
+    height: 100vh !important;
+  }
+  .innerDiv {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  header .innerDiv {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .innerDiv {
+    max-width: calc(1280px + 160px);
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  header .innerDiv {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1536px) {
+  .innerDiv {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  header .innerDiv {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+main,
+header,
+footer {
+  max-width: 2560px;
+  margin: 0 auto;
 }
